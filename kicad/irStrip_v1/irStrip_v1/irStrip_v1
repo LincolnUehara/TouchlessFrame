@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>/home/lin/touchlessFrame/kicadStrip/irStrip_v1/irStrip_v1/irStrip_v1.sch</h1>
+    <p>qui 13 ago 2020 23:59:50 -03</p>
+    <p>Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1</p>
+    <p><b>Component Count:</b>19</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1</td><td>1</td><td>100n</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>C2</td><td>1</td><td>10u</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>D1</td><td>1</td><td>INFRARED RECEIVER/EMITTER</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>J1</td><td>1</td><td>Conn_01x03</td><td>Connector_Generic:Conn_01x03</td><td>~</td><td>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J2, J3, J4, J5, J6, J7, J8, J9</td><td>8</td><td>Conn_01x01</td><td>Connector_Generic:Conn_01x01</td><td>~</td><td>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>JP1, JP2, JP3, JP4</td><td>4</td><td>SolderJumper_2_Open</td><td>Jumper:SolderJumper_2_Open</td><td>~</td><td>Solder Jumper, 2-pole, open</td><td></td></tr><tr><td>Q1</td><td>1</td><td>BC817</td><td>Transistor_BJT:BC817</td><td>http://www.fairchildsemi.com/ds/BC/BC817.pdf</td><td>0.8A Ic, 45V Vce, NPN Transistor, SOT-23</td><td></td></tr><tr><td>R1</td><td>1</td><td>100</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R2</td><td>1</td><td>1k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

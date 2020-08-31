@@ -1,0 +1,446 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Infrared Strips"
+Date "2020-06-20"
+Rev "Rev. 1"
+Comp "E. Lincoln Uehara"
+Comment1 "Strips for infrared emitter and receiver"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_Optical:TSOP45xx U1
+U 1 1 5EEE63DF
+P 3250 4650
+F 0 "U1" H 3238 5075 50  0000 C CNN
+F 1 "TSOP45xx" H 3238 4984 50  0000 C CNN
+F 2 "IR_Strip:infrared_lie_down" H 3200 4275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82460/tsop45.pdf" H 3900 4950 50  0001 C CNN
+	1    3250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L IR_Strip:MCP3021 U2
+U 1 1 5EEE71DE
+P 6800 4600
+F 0 "U2" H 6800 5015 50  0000 C CNN
+F 1 "MCP3021" H 6800 4924 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6700 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EEFB14A
+P 4050 4100
+F 0 "C1" H 4165 4146 50  0000 L CNN
+F 1 "4.7u" H 4165 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 3950 50  0001 C CNN
+F 3 "~" H 4050 4100 50  0001 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EEFC6F4
+P 4600 4450
+F 0 "R1" V 4393 4450 50  0000 C CNN
+F 1 "100" V 4484 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 4450 50  0001 C CNN
+F 3 "~" H 4600 4450 50  0001 C CNN
+	1    4600 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3950 3700 3850
+Wire Wire Line
+	3700 3850 4050 3850
+Wire Wire Line
+	4050 3850 4050 3950
+Wire Wire Line
+	3650 4450 4050 4450
+Wire Wire Line
+	4050 4250 4050 4450
+Connection ~ 4050 4450
+Wire Wire Line
+	4050 4450 4450 4450
+$Comp
+L Device:C C2
+U 1 1 5EF02D14
+P 5350 4100
+F 0 "C2" H 5465 4146 50  0000 L CNN
+F 1 "10u" H 5465 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 3950 50  0001 C CNN
+F 3 "~" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EF03163
+P 5800 4100
+F 0 "C3" H 5915 4146 50  0000 L CNN
+F 1 "0.1u" H 5915 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 3950 50  0001 C CNN
+F 3 "~" H 5800 4100 50  0001 C CNN
+	1    5800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3950 5350 3800
+Wire Wire Line
+	5350 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 3950
+Wire Wire Line
+	5350 4250 5350 4450
+Connection ~ 5350 4450
+Wire Wire Line
+	5350 4450 5800 4450
+Wire Wire Line
+	5800 4250 5800 4450
+Connection ~ 5800 4450
+Wire Wire Line
+	5800 4450 6450 4450
+Wire Wire Line
+	5800 3800 6250 3800
+Wire Wire Line
+	6250 3800 6250 3950
+Connection ~ 5800 3800
+$Comp
+L Device:R R3
+U 1 1 5EF127C2
+P 7250 4150
+F 0 "R3" H 7180 4104 50  0000 R CNN
+F 1 "10k" H 7180 4195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7180 4150 50  0001 C CNN
+F 3 "~" H 7250 4150 50  0001 C CNN
+	1    7250 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EF12AD7
+P 7550 4150
+F 0 "R4" H 7480 4104 50  0000 R CNN
+F 1 "10k" H 7480 4195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4150 50  0001 C CNN
+F 3 "~" H 7550 4150 50  0001 C CNN
+	1    7550 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4850 3800 4850
+Wire Wire Line
+	3800 4850 3800 4950
+Wire Wire Line
+	6450 4600 6050 4600
+Wire Wire Line
+	6050 4600 6050 4700
+Wire Wire Line
+	6350 5000 6350 4750
+Wire Wire Line
+	6350 4750 6450 4750
+Wire Wire Line
+	3650 4650 5000 4650
+Wire Wire Line
+	5000 5000 6350 5000
+Wire Wire Line
+	5000 4650 5000 5000
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5EF26448
+P 8450 4550
+F 0 "J6" H 8500 4300 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8800 4200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8450 4550 50  0001 C CNN
+F 3 "~" H 8450 4550 50  0001 C CNN
+	1    8450 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 4450 7250 4450
+Wire Wire Line
+	7250 4300 7250 4450
+Connection ~ 7250 4450
+Wire Wire Line
+	7250 4450 8250 4450
+Wire Wire Line
+	7150 4750 7550 4750
+Wire Wire Line
+	7700 4750 7700 4550
+Wire Wire Line
+	7700 4550 8250 4550
+Wire Wire Line
+	7550 4300 7550 4750
+Connection ~ 7550 4750
+Wire Wire Line
+	7550 4750 7700 4750
+Wire Wire Line
+	6350 5000 8000 5000
+Wire Wire Line
+	8000 5000 8000 4650
+Wire Wire Line
+	8000 4650 8250 4650
+Connection ~ 6350 5000
+Wire Wire Line
+	7250 4000 7250 3950
+Wire Wire Line
+	7250 3950 7400 3950
+Wire Wire Line
+	7550 3950 7550 4000
+Wire Wire Line
+	7400 3900 7400 3950
+Connection ~ 7400 3950
+Wire Wire Line
+	7400 3950 7550 3950
+$Comp
+L Device:LED D1
+U 1 1 5EF35251
+P 5700 1950
+F 0 "D1" H 5693 2167 50  0000 C CNN
+F 1 "INFRARED EMITTER" H 5693 2076 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5700 1950 50  0001 C CNN
+F 3 "~" H 5700 1950 50  0001 C CNN
+	1    5700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF394EC
+P 6250 1950
+F 0 "R2" V 6043 1950 50  0000 C CNN
+F 1 "220" V 6134 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 1950 50  0001 C CNN
+F 3 "~" H 6250 1950 50  0001 C CNN
+	1    6250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5EF3B591
+P 6900 1950
+F 0 "J5" H 7008 2131 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 7008 2040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6900 1950 50  0001 C CNN
+F 3 "~" H 6900 1950 50  0001 C CNN
+	1    6900 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 2200 5300 1950
+Wire Wire Line
+	5300 1950 5550 1950
+Wire Wire Line
+	5850 1950 6100 1950
+Wire Wire Line
+	6400 1950 6700 1950
+Wire Notes Line
+	5200 3650 7850 3650
+Wire Notes Line
+	7850 3650 7850 4950
+Wire Notes Line
+	7850 4950 5200 4950
+Wire Notes Line
+	5200 4950 5200 3650
+Text Notes 6350 3600 0    50   ~ 0
+Optional
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5EF50726
+P 4800 1950
+F 0 "J2" H 4908 2131 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 4908 2040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4800 1950 50  0001 C CNN
+F 3 "~" H 4800 1950 50  0001 C CNN
+	1    4800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2200 5000 2200
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5EF525AF
+P 4800 2200
+F 0 "J3" H 4908 2381 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 4908 2290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4800 2200 50  0001 C CNN
+F 3 "~" H 4800 2200 50  0001 C CNN
+	1    4800 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 3950 1950 0    50   ~ 0
+To Previous
+Text Notes 3950 2200 0    50   ~ 0
+To Next
+Text Notes 7050 1950 0    50   ~ 0
+Input Signal
+Connection ~ 4950 4450
+Wire Wire Line
+	4950 4450 5350 4450
+Wire Wire Line
+	4750 4450 4950 4450
+Wire Wire Line
+	4950 3900 4950 4450
+$Comp
+L power:VDD #PWR05
+U 1 1 5EF6646E
+P 4950 3900
+F 0 "#PWR05" H 4950 3750 50  0001 C CNN
+F 1 "VDD" H 4965 4073 50  0000 C CNN
+F 2 "" H 4950 3900 50  0001 C CNN
+F 3 "" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR08
+U 1 1 5EF68692
+P 7400 3900
+F 0 "#PWR08" H 7400 3750 50  0001 C CNN
+F 1 "VDD" H 7415 4073 50  0000 C CNN
+F 2 "" H 7400 3900 50  0001 C CNN
+F 3 "" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EF6977A
+P 3700 3950
+F 0 "#PWR01" H 3700 3700 50  0001 C CNN
+F 1 "GND" H 3705 3777 50  0000 C CNN
+F 2 "" H 3700 3950 50  0001 C CNN
+F 3 "" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EF6BBA2
+P 3800 4950
+F 0 "#PWR02" H 3800 4700 50  0001 C CNN
+F 1 "GND" H 3805 4777 50  0000 C CNN
+F 2 "" H 3800 4950 50  0001 C CNN
+F 3 "" H 3800 4950 50  0001 C CNN
+	1    3800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5EF6D099
+P 6250 3950
+F 0 "#PWR07" H 6250 3700 50  0001 C CNN
+F 1 "GND" H 6255 3777 50  0000 C CNN
+F 2 "" H 6250 3950 50  0001 C CNN
+F 3 "" H 6250 3950 50  0001 C CNN
+	1    6250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5EF6E0A8
+P 6050 4700
+F 0 "#PWR06" H 6050 4450 50  0001 C CNN
+F 1 "GND" H 6055 4527 50  0000 C CNN
+F 2 "" H 6050 4700 50  0001 C CNN
+F 3 "" H 6050 4700 50  0001 C CNN
+	1    6050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5EF6FA95
+P 4550 5900
+F 0 "#PWR04" H 4550 5650 50  0001 C CNN
+F 1 "GND" H 4555 5727 50  0000 C CNN
+F 2 "" H 4550 5900 50  0001 C CNN
+F 3 "" H 4550 5900 50  0001 C CNN
+	1    4550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR03
+U 1 1 5EF7238D
+P 4550 5400
+F 0 "#PWR03" H 4550 5250 50  0001 C CNN
+F 1 "VDD" H 4565 5573 50  0000 C CNN
+F 2 "" H 4550 5400 50  0001 C CNN
+F 3 "" H 4550 5400 50  0001 C CNN
+	1    4550 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 1550 0    50   ~ 0
+Emitter Strip
+Text Notes 5500 3250 0    50   ~ 0
+Receiver Strip
+Text Notes 5000 2400 0    50   ~ 0
+GND
+Text Notes 8550 4450 0    50   ~ 0
+SCL
+Text Notes 8550 4550 0    50   ~ 0
+SDA
+Text Notes 8550 4650 0    50   ~ 0
+ANALOG
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5EF04A03
+P 5000 5700
+F 0 "J4" H 4972 5582 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4972 5673 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5000 5700 50  0001 C CNN
+F 3 "~" H 5000 5700 50  0001 C CNN
+	1    5000 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1950 5300 1950
+Connection ~ 5300 1950
+Wire Notes Line
+	3850 2500 7600 2500
+Wire Notes Line
+	7600 2500 7600 1650
+Wire Notes Line
+	7600 1650 3850 1650
+Wire Notes Line
+	3850 1650 3850 2500
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5EF69BB9
+P 4100 5600
+F 0 "J1" H 3950 5600 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3700 5500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 5600 50  0001 C CNN
+F 3 "~" H 4100 5600 50  0001 C CNN
+	1    4100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5600 4550 5600
+Wire Wire Line
+	4300 5700 4550 5700
+Wire Wire Line
+	4550 5400 4550 5600
+Connection ~ 4550 5600
+Wire Wire Line
+	4550 5600 4800 5600
+Wire Wire Line
+	4550 5900 4550 5700
+Connection ~ 4550 5700
+Wire Wire Line
+	4550 5700 4800 5700
+Wire Notes Line
+	2600 3350 2600 6150
+Wire Notes Line
+	2600 6150 8950 6150
+Wire Notes Line
+	8950 6150 8950 3350
+Wire Notes Line
+	8950 3350 2600 3350
+$EndSCHEMATC
